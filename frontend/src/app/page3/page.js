@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function QuestionPage() {
-  const email = localStorage.getItem("emailAddress");
   const [isLoading, setIsLoading] = useState(true);
+  const [email, setEmail] = useState(null);
 
   const [answers, setAnswers] = useState({
     comfort: null,
@@ -20,6 +20,8 @@ export default function QuestionPage() {
   });
 
   useEffect(() => {
+    const emailFromStorage = localStorage.getItem("emailAddress");
+    setEmail(emailFromStorage);
     const loadProgress = async () => {
       try {
         if (!email) {
