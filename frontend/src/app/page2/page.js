@@ -21,7 +21,7 @@ export default function QuestionPage() {
         }
 
         const response = await axios.get(
-          `http://localhost:5000/api/progress/${currentEmail}`
+          `https://backendnextsupabase.onrender.com/api/progress/${currentEmail}`
         );
 
         if (response.data.success && response.data.data.Q1) {
@@ -65,7 +65,7 @@ export default function QuestionPage() {
       const answer = cardNumber === 1 ? "Nike Orange" : "Nike Black";
 
       await Promise.all([
-        axios.post("http://localhost:5000/api/submit-question", {
+        axios.post("https://backendnextsupabase.onrender.com/api/submit-question", {
           email: currentEmail,
           questionNumber: 1,
           answer,
