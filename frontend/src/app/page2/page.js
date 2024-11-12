@@ -100,7 +100,7 @@ export default function QuestionPage() {
           className="w-1/2 h-auto mx-auto top-0 left-0 ml-2 z-10 opacity-65"
         />
         <img
-          src="/1stshoe.PNG"
+          src="/1stshoe.png"
           alt="Your Image"
           className="w-3/4 h-auto mx-auto absolute top-5 left-12 filter mix-blend-overlay"
         />
@@ -128,7 +128,7 @@ export default function QuestionPage() {
                 <h3>Nike Orange</h3>
               </div>
               <img
-                src="/1rectangle1.PNG"
+                src="/1rectangle1.png"
                 alt="Nike Orange"
                 className="absolute inset-0 max-w-[70%] max-h-[70%] object-contain rounded-[35px] top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2"
               />
@@ -150,7 +150,7 @@ export default function QuestionPage() {
                 <h3>Nike Black</h3>
               </div>
               <img
-                src="/2rectangle2.PNG"
+                src="/2rectangle2.png"
                 alt="Nike Black"
                 className="absolute inset-0 max-w-[70%] max-h-[70%] object-contain rounded-[35px] top-1/2 transform -translate-y-1/2 left-1/2 -translate-x-1/2"
               />
@@ -172,7 +172,7 @@ export default function QuestionPage() {
             >
               <div className="w-3 sm:w-4 h-3 sm:h-4 mr-1">
                 <img
-                  src="/3union3.PNG"
+                  src="/3union3.png"
                   alt="Back"
                   className="w-full h-full object-contain filter grayscale"
                 />
@@ -192,7 +192,7 @@ export default function QuestionPage() {
               </span>{" "}
               <div className="w-3 sm:w-4 h-3 sm:h-4 ml-1 sm:ml-2 flex-shrink-0">
                 <img
-                  src="/2union2.PNG"
+                  src="/2union2.png"
                   alt="Home"
                   className="w-full h-full object-contain filter grayscale"
                 />
