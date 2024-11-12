@@ -74,7 +74,7 @@ export default function SurveyComponent() {
           <div>
             <div>
               <img
-                src="/frontend/public/Union.PNG"
+                src="/frontend/public/1union.PNG"
                 alt="Placeholder"
                 className="w-[50%] md:w-[55%] h-auto object-contain mix-blend-overlay opacity-90 brightness-200 contrast-125 sm:top-10 xl:mt-[5%] xl:ml-[15%] pl-6"
               />
@@ -92,7 +92,7 @@ export default function SurveyComponent() {
 
             <div className="relative -mt-16 lg:-mt-24">
               <img
-                src="/frontend/public/Ellipse.PNG"
+                src="/frontend/public/1ellipse.PNG"
                 alt="Placeholder"
                 className="w-full h-auto object-contain mix-blend-overlay"
               />
@@ -150,7 +150,7 @@ export default function SurveyComponent() {
               </div>
               <div className="w-4 h-4">
                 <img
-                  src="/frontend/public/Union2.PNG"
+                  src="/frontend/public/2union2.PNG"
                   alt="Union Icon"
                   className="w-full h-full object-contain filter grayscale"
                 />
