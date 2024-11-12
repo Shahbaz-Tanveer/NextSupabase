@@ -5,19 +5,19 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-l from-[rgb(1,1,1)] to-[#4d4d4d] flex flex-col items-center  ">
       <div className="">
         <img
-          src="/1union.PNG"
+          src="/1union.png"
           alt="Your Image"
           className="w-[55%] h-auto mx-auto left-0 top-0 pl-10 absolute xl:w-[20%] xl:left-[8%] xl:top-[2%]"
         />
 
         <img
-          src="/1stshoe.PNG"
+          src="/1stshoe.png"
           alt="Your Image"
           className="w-3/4 h-auto mx-auto absolute top-4 left-12 filter mix-blend-overlay xl:w-1/3 xl:left-[3%] xl:mt-20"
         />
 
         <img
-          src="/1ellipse.PNG"
+          src="/1ellipse.png"
           alt="Your Image"
           className="w-3/4 h-auto mx-auto absolute left-12 filter mix-blend-overlay hidden lg:block xl:w-1/3 xl:left-[5%] xl:mt-[20%] xl:pt-[15%]"
         />
@@ -58,7 +58,7 @@ export default function Home() {
             </span>
             <div className="w-3 sm:w-4 h-3 sm:h-4 ml-1 sm:ml-2 flex-shrink-0">
               <img
-                src="/2union2.PNG"
+                src="/2union2.png"
                 alt="Home"
                 className="w-full h-full object-contain filter grayscale"
               />
