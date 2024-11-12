@@ -16,7 +16,7 @@ export default function SurveyComponent() {
   const checkEmailProgress = async (email) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/progress/${email}`
+        `https://backendnextsupabase.onrender.com/api/progress/${email}`
       );
       return response.data;
     } catch (error) {
@@ -46,7 +46,7 @@ export default function SurveyComponent() {
 
       // If email doesn't exist, proceed with submission
       const submitResponse = await axios.post(
-        "http://localhost:5000/api/submit-email",
+        "https://backendnextsupabase.onrender.com/api/submit-email",
         {
           email: email,
         }
