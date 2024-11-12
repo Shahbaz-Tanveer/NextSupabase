@@ -2,7 +2,6 @@
 
 import axios from "axios";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function SurveyComponent() {
   const [email, setEmail] = useState("");
@@ -36,6 +35,7 @@ export default function SurveyComponent() {
     setIsSubmitting(true);
 
     try {
+      // First check if email exists
       const progressResponse = await checkEmailProgress(email);
 
       if (progressResponse.success) {
@@ -44,6 +44,7 @@ export default function SurveyComponent() {
         return;
       }
 
+      // If email doesn't exist, proceed with submission
       const submitResponse = await axios.post(
         "http://localhost:5000/api/submit-email",
         {
@@ -72,37 +73,28 @@ export default function SurveyComponent() {
         <div className="relative w-full lg:w-1/2 aspect-square lg:aspect-auto lg:h-full">
           <div>
             <div>
-              <Image
-                src="/Union.PNG"
-                alt="Union Logo"
-                width={500}
-                height={500}
+              <img
+                src="/frontend/public/Union.PNG"
+                alt="Placeholder"
                 className="w-[50%] md:w-[55%] h-auto object-contain mix-blend-overlay opacity-90 brightness-200 contrast-125 sm:top-10 xl:mt-[5%] xl:ml-[15%] pl-6"
-                priority
               />
             </div>
           </div>
 
           <div className="absolute w-full" style={{ bottom: "5vh" }}>
             <div className="relative lg:-top-40 lg:-left-9 w-full">
-              <Image
-                src="/1stshoe.png"
-                alt="Shoe Image"
-                width={800}
-                height={600}
+              <img
+                src="/frontend/public/1stshoe.png"
+                alt="Placeholder"
                 className="w-full h-auto object-contain mix-blend-overlay"
-                priority
               />
             </div>
 
             <div className="relative -mt-16 lg:-mt-24">
-              <Image
-                src="/Ellipse.PNG"
-                alt="Ellipse Background"
-                width={800}
-                height={400}
+              <img
+                src="/frontend/public/Ellipse.PNG"
+                alt="Placeholder"
                 className="w-full h-auto object-contain mix-blend-overlay"
-                priority
               />
             </div>
           </div>
@@ -157,11 +149,9 @@ export default function SurveyComponent() {
                 {isSubmitting ? "Please wait..." : "Start Survey"}
               </div>
               <div className="w-4 h-4">
-                <Image
-                  src="/Union2.PNG"
+                <img
+                  src="/frontend/public/Union2.PNG"
                   alt="Union Icon"
-                  width={16}
-                  height={16}
                   className="w-full h-full object-contain filter grayscale"
                 />
               </div>
