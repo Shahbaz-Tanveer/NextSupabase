@@ -30,7 +30,7 @@ export default function QuestionPage() {
         }
 
         const response = await axios.get(
-          `http://localhost:5000/api/progress/${email}`
+          `https://backendnextsupabase.onrender.com/api/progress/${email}`
         );
 
         if (response.data.success && response.data.data) {
@@ -67,7 +67,7 @@ export default function QuestionPage() {
     try {
       const partNumber = key === "comfort" ? 1 : key === "looks" ? 2 : 3;
 
-      await axios.post("http://localhost:5000/api/submit-question", {
+      await axios.post("https://backendnextsupabase.onrender.com/api/submit-question", {
         email,
         questionNumber: 2,
         part: partNumber,
